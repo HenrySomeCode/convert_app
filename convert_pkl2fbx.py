@@ -14,7 +14,11 @@ except:
     os.system('pip install bpy==2.91a0 && bpy_post_install')
     import bpy
 
-from mathutils import Matrix, Vector, Quaternion, Euler
+try:
+    from mathutils import Matrix, Vector, Quaternion, Euler
+except:
+    os.system('apt-get update && apt-get install -y gcc')
+    os.system('pip install mathutils==2.81.2')
 import streamlit as st
 import zipfile
 import shutil
