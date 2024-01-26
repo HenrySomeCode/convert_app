@@ -1,0 +1,5 @@
+future-fstrings
+mathutils==2.81.2
+streamlit==1.23.1
+click==8.1.7
+protobuf==4.24.4
